@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnly — Learn without limits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Learnly home"><span>l</span> learnly</a>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#courses">Explore</a>
+        <a href="#paths">Learning paths</a>
+        <a href="#community">Community</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="search-button" aria-label="Search courses">⌕</button>
+        <button class="avatar" aria-label="Open profile">MS</button>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Your learning space</p>
+          <h1>Grow your <em>curiosity.</em><br />Build your future.</h1>
+          <p class="intro">Practical courses from inspiring experts, designed to fit beautifully into your everyday life.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#courses">Explore courses <span>→</span></a>
+            <button class="text-button" id="continue-learning">Continue learning <span>↗</span></button>
+          </div>
+          <div class="learner-stack" aria-label="Join more than 50 thousand learners">
+            <div class="faces"><i>J</i><i>R</i><i>S</i><i>+</i></div>
+            <p><strong>50,000+ curious learners</strong><br />building something meaningful</p>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div><div class="arch arch-back"></div><div class="arch arch-front"></div>
+          <div class="plant"><span></span><span></span><span></span><b></b></div>
+          <div class="paper"><small>IDEAS</small><strong>Make<br />space to<br /><em>grow.</em></strong></div>
+          <div class="spark one">✦</div><div class="spark two">✦</div>
+        </div>
+      </section>
+
+      <section class="progress-section" id="paths">
+        <div class="section-heading"><div><p class="eyebrow">Pick up where you left off</p><h2>Continue your journey</h2></div><a href="#courses">View all learning <span>→</span></a></div>
+        <article class="continue-card">
+          <div class="course-art lavender"><span class="mini-sun"></span><b>TYPE<br />MATTERS</b><i>Aa</i></div>
+          <div class="course-info"><span class="tag">Design</span><h3>Typography fundamentals</h3><p>with Maya Hart · 8 lessons</p><div class="progress-row"><div class="progress"><span></span></div><b>64% complete</b></div></div>
+          <button class="round-play" id="resume-button" aria-label="Resume Typography fundamentals">▶</button>
+        </article>
+      </section>
+
+      <section class="courses-section" id="courses">
+        <div class="section-heading"><div><p class="eyebrow">Made for your next chapter</p><h2>Explore popular courses</h2></div><div class="filters" role="tablist"><button class="filter selected" data-filter="all">All</button><button class="filter" data-filter="design">Design</button><button class="filter" data-filter="business">Business</button><button class="filter" data-filter="wellbeing">Wellbeing</button></div></div>
+        <div class="course-grid">
+          <article class="course-card" data-category="design" data-title="Color theory for everyday creators" data-lessons="12" data-time="3h 20m" data-instructor="Nina Mendez"><div class="card-art orange"><span>✳</span><b>CREATE<br />WITH<br />COLOR</b></div><p class="tag">Design</p><h3>Color theory for everyday creators</h3><p class="instructor">Nina Mendez · 12 lessons</p><div class="card-bottom"><span>★ 4.9</span><span>3h 20m</span></div></article>
+          <article class="course-card" data-category="business" data-title="Build a business around your craft" data-lessons="16" data-time="4h 10m" data-instructor="Jordan Lee"><div class="card-art blue"><span class="chart">↗</span><b>THE<br />CREATIVE<br />BUSINESS</b></div><p class="tag">Business</p><h3>Build a business around your craft</h3><p class="instructor">Jordan Lee · 16 lessons</p><div class="card-bottom"><span>★ 4.8</span><span>4h 10m</span></div></article>
+          <article class="course-card" data-category="wellbeing" data-title="Design a life with more intention" data-lessons="10" data-time="2h 45m" data-instructor="Elena Moss"><div class="card-art green"><span class="moon">☾</span><b>THE ART<br />OF SLOW<br />LIVING</b></div><p class="tag">Wellbeing</p><h3>Design a life with more intention</h3><p class="instructor">Elena Moss · 10 lessons</p><div class="card-bottom"><span>★ 5.0</span><span>2h 45m</span></div></article>
+          <article class="course-card extra-card" data-category="design" data-title="Sketch your big ideas" data-lessons="9" data-time="1h 50m" data-instructor="Remy Doyle"><div class="card-art pink"><span>✎</span><b>DRAW<br />WHAT<br />YOU SEE</b></div><p class="tag">Design</p><h3>Sketch your big ideas</h3><p class="instructor">Remy Doyle · 9 lessons</p><div class="card-bottom"><span>★ 4.7</span><span>1h 50m</span></div></article>
+          <article class="course-card extra-card" data-category="business" data-title="Make your next presentation shine" data-lessons="11" data-time="2h 30m" data-instructor="Aisha Grant"><div class="card-art yellow"><span>✦</span><b>STORY<br />TELLING<br />AT WORK</b></div><p class="tag">Business</p><h3>Make your next presentation shine</h3><p class="instructor">Aisha Grant · 11 lessons</p><div class="card-bottom"><span>★ 4.9</span><span>2h 30m</span></div></article>
+          <article class="course-card extra-card" data-category="wellbeing" data-title="A gentle guide to better habits" data-lessons="7" data-time="1h 25m" data-instructor="Theo Park"><div class="card-art peach"><span>☀</span><b>SMALL<br />HABITS,<br />BIG DAYS</b></div><p class="tag">Wellbeing</p><h3>A gentle guide to better habits</h3><p class="instructor">Theo Park · 7 lessons</p><div class="card-bottom"><span>★ 4.8</span><span>1h 25m</span></div></article>
+        </div>
+        <button class="load-more" id="load-more">Show more courses <span>↓</span></button>
+      </section>
+
+      <section class="why-learnly" aria-labelledby="why-title">
+        <div><p class="eyebrow">A kinder way to learn</p><h2 id="why-title">Small steps. Real momentum.</h2><p class="section-intro">No overwhelming lecture libraries. Just thoughtfully sequenced lessons, friendly expert guidance, and a place to put your new skills into practice.</p><a class="text-link" href="#courses">Find your next course <span>→</span></a></div>
+        <div class="benefit-grid"><article><span>◌</span><h3>Learn your way</h3><p>Watch in short bursts, save lessons, and return whenever your day allows.</p></article><article><span>✦</span><h3>Make it stick</h3><p>Helpful prompts and mini projects transform inspiration into progress.</p></article><article><span>♡</span><h3>Feel supported</h3><p>Meet fellow learners, share your work, and celebrate the little wins.</p></article><article><span>↗</span><h3>Keep growing</h3><p>Personal recommendations make choosing what comes next effortless.</p></article></div>
+      </section>
+
+      <section class="stats"><div><strong>130+</strong><span>expert-led courses</span></div><div><strong>50k</strong><span>active learners</span></div><div><strong>4.9/5</strong><span>average learner rating</span></div><div><strong>18</strong><span>creative disciplines</span></div></section>
+
+      <section class="stories"><div class="section-heading"><div><p class="eyebrow">Learner stories</p><h2>Made for people like you</h2></div><div class="story-arrows"><button id="previous-story" aria-label="Previous story">←</button><button id="next-story" aria-label="Next story">→</button></div></div><div class="story-wrap"><article class="story active"><div class="quote-mark">“</div><blockquote>I came for a single design class and stayed for the rhythm of learning. It has given me the confidence to finally share my work.</blockquote><div class="person"><span class="person-avatar rose">AM</span><p><strong>Avery Morgan</strong><br />Freelance illustrator</p></div></article><article class="story"><div class="quote-mark">“</div><blockquote>The lessons are warm, clear, and surprisingly practical. I put together my portfolio site the same week I started the course.</blockquote><div class="person"><span class="person-avatar sky">JT</span><p><strong>Jamie Tran</strong><br />Junior designer</p></div></article><article class="story"><div class="quote-mark">“</div><blockquote>Learnly makes personal growth feel like a treat, not another item on my to-do list.</blockquote><div class="person"><span class="person-avatar gold">SK</span><p><strong>Samira Khan</strong><br />Small business owner</p></div></article></div></section>
+
+      <section class="faq"><div><p class="eyebrow">Good questions</p><h2>Everything you need<br />to begin.</h2></div><div class="faq-list"><details open><summary>How does Learnly work?<span>+</span></summary><p>Choose a course, learn at your own pace, and enjoy lifetime access to the lessons you enrol in. Every course comes with simple projects to help you practise.</p></details><details><summary>Can I learn on my phone?<span>+</span></summary><p>Yes. Learnly is designed to work beautifully on your phone, tablet, or computer, so your learning can travel with you.</p></details><details><summary>What if a course is not right for me?<span>+</span></summary><p>We offer a 14-day, no-fuss refund on individual courses. Your curiosity deserves room to explore.</p></details><details><summary>Do I get a certificate?<span>+</span></summary><p>You'll receive a shareable completion certificate when you finish every lesson and project in a course.</p></details></div></section>
+
+      <section class="community" id="community"><div><p class="eyebrow">Learn together</p><h2>Ideas feel bigger<br />when you share them.</h2></div><button class="button cream" id="community-button">Join the community <span>→</span></button></section>
+    </main>
+    <footer><a class="brand" href="#home"><span>l</span> learnly</a><p>© 2025 Learnly. Made for curious minds.</p><div><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Help center</a></div></footer>
+    <div class="modal" id="course-modal" aria-hidden="true"><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close">×</button><p class="eyebrow" id="modal-category">Course preview</p><h2 id="modal-title">Course title</h2><p id="modal-description">A practical, joyful learning experience that fits into your week.</p><div class="modal-meta"><span id="modal-instructor"></span><span id="modal-lessons"></span><span id="modal-time"></span></div><button class="button primary" id="enrol-button">Enrol in this course <span>→</span></button></div></div>
+    <div class="modal" id="search-modal" aria-hidden="true"><div class="modal-panel search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title"><button class="modal-close" aria-label="Close">×</button><p class="eyebrow">Course finder</p><h2 id="search-title">What do you want to learn?</h2><input id="course-search" type="search" placeholder="Try “design”, “business”, or “habits”" autocomplete="off" /><div id="search-results"></div></div></div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
